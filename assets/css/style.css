@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #263238;
+}
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 24px;
+}
+header, footer { padding: 16px; background: #eaf2f8; }
+header h1 { margin: 0 0 8px; font-size: 28px; border: 0; padding: 0; }
+header p { margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; padding: 14px 0; }
+nav a { color: #145a86; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { min-height: 220px; padding: 16px 0; }
+footer { text-align: center; font-size: 14px; }
+h1 { font-size: 28px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+h2 { color: #263238; }
+.main { margin-top: 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+td img { width: 80px; height: auto; object-fit: contain; }
+a { color: #145a86; }
+.main > a, .button {
+    display: inline-block; margin: 0 0 15px; padding: 7px 10px;
+    background: #337ab7; color: white; text-decoration: none; border-radius: 2px;
+}
+td a { text-decoration: none; margin-right: 8px; }
+td a:hover { text-decoration: underline; }
+.input { margin-bottom: 12px; }
+.input label { display: inline-block; width: 120px; }
+.input input, .input select {
+    padding: 6px; width: min(260px, 100%); border: 1px solid #ccc;
+}
+.submit input, button {
+    background: #337ab7; color: white; border: 0; padding: 7px 15px; cursor: pointer;
+}
+.submit input:hover, button:hover { background: #286090; }
+.action-delete { background: #b52b27; }
+.message { padding: 10px 12px; margin: 12px 0; background: #eaf2f8; border-left: 4px solid #337ab7; }
+.error { color: #a94442; }
+.form-actions { display: flex; gap: 10px; align-items: center; }
+@media (max-width: 700px) {
+    .container { width: 96%; margin: 10px auto; padding: 14px; overflow-x: auto; }
+    table { min-width: 720px; }
+    .input label { display: block; width: auto; margin-bottom: 5px; }
+}
